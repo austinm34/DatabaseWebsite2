@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="DatabaseWebsite.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>test</title>
+    <link href="style/main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id ="mainData">
+            <div id="Header">Welcome to the HealthCare Database!</div>
+            <div id="Menu">
+                <asp:Panel ID="pnMenu" runat="server">
+                    <a href="Default.aspx">Patient Login</a> | <a href="Stock.aspx">Doctor Login</a> | <a href="Finances.aspx">Administrator Login</a>
+                </asp:Panel>
+            </div>
+            <div id="Content">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            </div>
+            <div id="Footer">Go Coogs!</div>
+        </div>
+    </form>
+</body>
+</html>
